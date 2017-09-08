@@ -105,7 +105,7 @@ module是配置loader的地方,通过各种loader，可以让webpack理解各种
 ### webpack.prod.js
 
 通过UglifyjsPlugin对代码进行压缩，去除重复引用
-DefinePlugin设置环境变量指定当前环境，触发各library可能进行的优化处理
+DefinePlugin设置环境变量指定当前环境，各library可能进行的优化处理
 
     const config = merge(comm, {
         devtool: 'cheap-source-map',
